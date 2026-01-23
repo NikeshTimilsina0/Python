@@ -35,3 +35,12 @@ def delete_setting(settings,key):
         return "Setting not found!"
 
 
+def view_settings(settings):
+    if not settings:
+        return "No settings available."
+
+    output = ""
+    for key in sorted(settings):
+        output += f"{key.capitalize()}: {settings[key]}\n"
+
+    return output
