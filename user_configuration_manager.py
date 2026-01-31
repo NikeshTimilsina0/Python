@@ -36,11 +36,17 @@ def delete_setting(settings,key):
 
 
 def view_settings(settings):
+    # Check if dictionary is empty
     if not settings:
         return "No settings available."
-
-    output = ""
-    for key in sorted(settings):
-        output += f"{key.capitalize()}: {settings[key]}\n"
-
-    return output
+    
+    result = "Current User Settings:\n"
+    
+    
+    for key, value in settings.items():
+        
+        capitalized_key = key.capitalize()
+        result += f"{capitalized_key}: {value}\n"
+    
+    return result
+    
