@@ -3,3 +3,4 @@
     "github.copilot.nextEditSuggestions.enabled": false,
     "github.copilot.nextEditSuggestions.fixes": false
 }
+//removed copilot to practice since it is quite bad at predicting next lines and confuses me
